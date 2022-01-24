@@ -3,7 +3,7 @@ const path = require('path')
 
 const app = express()
 
-const dir = path.join(__dir, "..public")
+const dir = path.join(__dir, "../public/index.html")
 app.use(express.static(dir))
 app.get('*', (req,res)=>{
     res.sendFile(path.join(__dirname, "../public/404.html"))
