@@ -9,34 +9,44 @@
         @import url("../public/css/site.css");
     </style>
     <body>
-        <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link"  href="main.html">Assignments</a>
-            <a class="nav-link" href="aboutme.html">About Me</a>
-            <a class="nav-link" href="404.html">Error</a>
-
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="login.html">Login</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        <a class="nav-link" href="main.html">Assignments</a>
+                        <a class="nav-link" href="aboutme.html">About Me</a>
+                        <a class="nav-link" href="404.html">Error</a>
+                        <a class="nav-link" href="create-account.html">Create Account</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>Login</h1>
         <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <label for="exampleInputEmail1" class="form-label, center">Email address</label>
+              <input type="email" class="form-control, center" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text, center">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3, center">
               <label for="exampleInputUsername" class="form-label">Username</label>
               <input type="username" class="form-control" id="exampleInputUsername">
             </div>
-            <div class="mb-3">
+            <div class="mb-3, center">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
               </div>
-            <div class="mb-3 form-check">
+            <div class="mb-3 form-check, center" >
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              <label class="form-check-label" for="exampleCheck1">Check to save information</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary, center">Submit</button>
           </form>
-          <a href="create-account.html">Don't have an account? Create An Account</a>
+          <a href="create-account.html" class = "center">Don't have an account? Create An Account</a>
     </body>
 </html>
