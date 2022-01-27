@@ -3,7 +3,7 @@ const path = require('path')
 
 const router = express.Router()
 
-router.get('', (req, res) => {
+router.get('/create-account', (req, res) => {
     const dir = path.join(__dirname,"../templates/create-account.html")
     res.sendFile(dir)
 })

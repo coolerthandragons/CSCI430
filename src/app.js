@@ -4,7 +4,7 @@ const path = require('path')
 const app = express()
 
 const indexRouter = require('../routers/index') 
-const aboutMeRouter = require('../routers/aboutMe')
+const aboutMeRouter = require('../routers/aboutme')
 const createaccountRouter = require('../routers/create-account')
 const loginRouter = require('../routers/login')
 const mainRouter = require('../routers/main') 

@@ -3,8 +3,8 @@ const path = require('path')
 
 const router = express.Router()
 
-router.get('', (req, res) => {
-    const dir = path.join(__dirname,"../templates/aboutMe.html")
+router.get('/aboutme', (req, res) => {
+    const dir = path.join(__dirname,"../templates/aboutme.html")
     res.sendFile(dir)
 })
 
