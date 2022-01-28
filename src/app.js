@@ -1,18 +1,26 @@
 const express = require('express')
 const path = require('path')
-
-const app = express()
+const hbs = require('hbs')
 
 const indexRouter = require('../routers/index') 
 const aboutMeRouter = require('../routers/aboutme')
-const createaccountRouter = require('../routers/create-account')
+const createaccountRouter = require('../routers/create_account')
 const loginRouter = require('../routers/login')
 const mainRouter = require('../routers/main') 
 const _404Router = require('../routers/404')
 
+const app = express()
 
 const dir = path.join(__dirname, "../public") 
 app.use(express.static(dir)) 
+
+app.set('view engine', 'hbs')
+
+const viewsPath = path.join(__dirname, "../templates")
+app.set('views', viewsPath)
+
+const partialsPath = path.join(__dirname, "../templates/partials")
+hbs.registerPartials("../templates/partials")
 
 app.use(indexRouter) 
 app.use(aboutMeRouter)
