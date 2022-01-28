@@ -20,7 +20,7 @@ const viewsPath = path.join(__dirname, "../templates")
 app.set('views', viewsPath)
 
 const partialsPath = path.join(__dirname, "../templates/partials")
-hbs.registerPartials("../templates/partials")
+hbs.registerPartials(partialsPath)
 
 app.use(indexRouter) 
 app.use(aboutMeRouter)
